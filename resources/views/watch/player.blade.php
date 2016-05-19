@@ -1,0 +1,22 @@
+@extends('layouts.app')
+
+@section('content')
+  <section class="row bg-cover bg-camera">
+    <div class="small-centered text-center padding-vert-large ratio ratio--5-2 bg-sepia">
+      <div data-component="player">
+        <div class="ratio ratio--5-2">
+          <iframe src="{{ $authorization['player']['host'] }}{{ $authorization['player']['path'] }}?color=804732&autoplay=1&sharing=0&authorization={{ $authorization['token'] }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @include('_shared.github')
+
+  <section class="small-centered small-1-1 medium-1-2 padding-top-large">
+    <header class="row margin-vert-medium">
+      <h2 class="col small-1-1 medium-1-2 head-2 text-left">{{ $authorization['_embedded']['video']['title'] }}</h2>
+    </header>
+    <div class="text-3">{!! $authorization['_embedded']['video']['description'] !!}</div>
+  </section>
+@endsection

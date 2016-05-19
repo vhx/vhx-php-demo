@@ -1,0 +1,37 @@
+@extends('layouts.app')
+
+@section('content')
+  <section class="bg-cover bg-camera bg-sepia pos-fixed pos-top pos-left fill-width fill-height">
+    <div data-component="watch-unauthorized" class="margin-top-xxlarge z-low pos-relative">
+      <div class="small-centered small-1-1 medium-1-2 large-1-3 padding-large border radius bg-white row">
+        <header class="text-center margin-bottom-large">
+          <i class="icon-camera-black icon--xlarge"></i>
+          <h2 class="margin-top-small margin-bottom-medium"><i class="symbol-wintergarten-black"></i></h2>
+        </header>
+
+        <div class="text-center">
+          <h4 class="head-2 margin-bottom-small">Unauthorized</h4>
+          <p class="text-3">You must log in with an account to view subscription content</p>
+
+          <form action="/login?redirect={{ Request::path() }}" method="post" class="form text-left">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <fieldset class="margin-vert-medium">
+              <label class="block margin-bottom-small">Email</label>
+              <input type="text" name="customer[email]" value="{{ $demo['email'] }}">
+            </fieldset>
+            <fieldset class="margin-vert-medium">
+              <label class="block margin-bottom-small">Password</label>
+              <input type="password" value="password">
+            </fieldset>
+
+            <div class="callout margin-top-medium">This is a demo app. You can click Login to go through a mock user experience.</div>
+
+            <fieldset class="modal--actions margin-top-large text-center">
+              <button type="submit" class="btn-maroon btn--large">Login</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+@endsection

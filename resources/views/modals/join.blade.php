@@ -1,0 +1,55 @@
+<div class="modal--container" data-component="modal-join">
+  <div class="modal--body">
+    <header class="text-center">
+      <i class="icon-camera-black icon--large"></i>
+    </header>
+
+    <form action="/join" method="post" class="form" data-prop="action-join">
+      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+      <fieldset class="margin-vert-medium">
+        <label class="block margin-bottom-xsmall">Email</label>
+        <input type="email" name="customer[email]" value="{{ $demo['email'] }}" class="fill-width">
+      </fieldset>
+      <fieldset class="margin-vert-medium">
+        <label class="block margin-bottom-xsmall">Full Name</label>
+        <input type="text" name="customer[name]" value="Customer Name" class="fill-width">
+      </fieldset>
+      <fieldset class="margin-vert-medium pos-relative">
+        <label class="block margin-bottom-xsmall">Credit Card Number</label>
+        <i class="icon-visa icon--medium"></i>
+        <input data-card-number type="text" value="4111 1111 1111 1111" class="fill-width">
+      </fieldset>
+
+      <div class="row margin-vert-medium">
+        <fieldset class="col small-1-1 medium-1-3 padding-right-small" data-expiry>
+          <label class="block margin-bottom-xsmall">Expiration</label>
+          <div class="col small-1-2">
+            <input data-expiry-month type="number" value="12">
+          </div>
+          <div class="col small-1-2 pos-relative">
+            <input data-expiry-year type="number" value="19">
+          </div>
+        </fieldset>
+        <fieldset class="col small-1-1 medium-1-3 padding-horz-small">
+          <label class="block margin-bottom-xsmall">CVC</label>
+          <input type="number" value="123">
+        </fieldset>
+        <fieldset class="col small-1-1 medium-1-3 padding-left-small">
+          <label class="block margin-bottom-xsmall">Postal Code</label>
+          <input type="number" value="12345">
+        </fieldset>
+      </div>
+
+      <div class="callout margin-top-medium margin-bottom-xsmall">This is a demo app. You can click Pay $0 to create a mock user account.</div>
+
+      <fieldset class="modal--actions margin-top-medium text-center">
+        <input type="text" name="important">
+        <button type="submit" class="btn-maroon btn--large">Pay $0 / Mo</button>
+      </fieldset>
+    </form>
+
+      <button data-modal-close class="btn modal--close icon icon--center icon-x-white"></button>
+  </div>
+
+  <div class="modal--bg bg-white-transparent"></div>
+</div>

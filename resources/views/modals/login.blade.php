@@ -1,0 +1,30 @@
+<div class="modal--container" data-component="modal-login">
+  <div class="modal--body">
+    <header class="text-center">
+      <i class="icon-camera-black icon--large"></i>
+    </header>
+
+    <form action="/login?redirect={{ Request::path() }}" method="post" class="form">
+      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+      <fieldset class="margin-vert-small">
+        <label class="block margin-bottom-xsmall">Email</label>
+        <input type="text" name="customer[email]" value="{{ $demo['email'] }}">
+      </fieldset>
+      <fieldset class="margin-vert-small">
+        <label class="block margin-bottom-xsmall">Password</label>
+        <input type="password" value="password">
+      </fieldset>
+
+      <div class="callout margin-top-medium margin-bottom-xsmall">This is a demo app. You can click Login to go through a mock user experience.</div>
+
+      <fieldset class="modal--actions margin-top-medium text-center">
+        <input type="text" name="important">
+        <button type="submit" class="btn-maroon btn--large">Login</button>
+      </fieldset>
+    </form>
+
+      <button data-modal-close class="btn modal--close icon icon--center icon-x-white"></button>
+  </div>
+
+  <div class="modal--bg bg-white-transparent"></div>
+</div>
