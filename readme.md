@@ -7,7 +7,11 @@ A PHP demo site powered by the VHX API. Read more about the VHX API at our [Deve
 
 This PHP demo site uses [Laravel](http://laravel.com) as a foundation. We recommend following Laravel's [setup instructions](https://laravel.com/docs/5.2/installation) for getting your local repo started. You can use this demo repo as a reference for integrating VHX.
 
-We're using the [VHX PHP Client Library](https://github.com/vhx/vhx-php) (added via Composer). Specifics of the VHX integration can be found in  `app/providers/AppServiceProvider.php`, in `app/Http/routes.php`, and in the `resources/views` folder.
+We're using the [VHX PHP Client Library](https://github.com/vhx/vhx-php) (added via Composer). Specifics of the VHX integration can be found:
+
+`app/Providers/AppServiceProvider.php`<br>
+`app/Http/routes.php`<br>
+`resources/views`
 
 ## Developer Support
 
