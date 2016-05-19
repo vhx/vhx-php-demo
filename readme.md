@@ -1,27 +1,14 @@
-# Laravel PHP Framework
+# VHX API &mdash; PHP Demo Site
+![wintergarten screenshot](https://cloud.githubusercontent.com/assets/447100/13134060/225066d0-d5b7-11e5-9ab4-d0a360b0c6c6.jpg)
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+A PHP demo site powered by the VHX API. Read more about the VHX API at our [Developer Docs](http://dev.vhx.tv).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Getting Started
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+This PHP demo site uses [Laravel](http://laravel.com) as a foundation. We recommend following Laravel's [setup instructions](https://laravel.com/docs/5.2/installation) for getting your local repo started. You can use this demo repo as a reference for integrating VHX.
 
-## Official Documentation
+We're using the [VHX PHP Client Library](github.com/vhx/vhx-php) (added via Composer). Specifics of the VHX integration can be found in  `app/providers/AppServiceProvider.php`, in `app/Http/routes.php`, and in the `resources/views` folder.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Developer Support
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Our developers are here to help with any implementation questions you might have. Get in touch with us via email at [api@vhx.tv](api@vhx.tv).
