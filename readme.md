@@ -15,4 +15,4 @@ We're using the [VHX PHP Client Library](https://github.com/vhx/vhx-php) (added 
 
 ## Developer Support
 
-Our developers are here to help with any implementation questions you might have. Get in touch with us via email at [api@vhx.tv](api@vhx.tv).
+Our developers are here to help with any implementation questions you might have. Please submit any questions [here](https://vimeoott.zendesk.com/hc/en-us/requests/new).
